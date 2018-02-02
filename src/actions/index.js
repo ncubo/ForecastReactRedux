@@ -7,7 +7,8 @@ export const FETCH_WEATHER = 'FETCH_WEATHER';
 
 export function fetchWeather(city) {
 
-  const url = `${ROOT_URL}&q=${city},ca`;
+  // const url = `${ROOT_URL}&q=${city},ca`; //solo para Canadá
+  const url = `${ROOT_URL}&q=${city}`; //para cualquier ciudad
   const request = axios.get(url);
 
   console.log('Request: ',request);
